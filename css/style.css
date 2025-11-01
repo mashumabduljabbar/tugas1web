@@ -1,0 +1,132 @@
+/* ===== style.css ===== */
+
+/* Reset sederhana */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #002147;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+header .logo {
+  width: 60px;
+  height: 60px;
+}
+
+nav {
+  background-color: #014f86;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffe600;
+}
+
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Form */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+form label {
+  grid-column: span 2;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+form input, form button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  grid-column: span 2;
+  background-color: #014f86;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #002147;
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background-color: #014f86;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #002147;
+  color: white;
+  margin-top: 30px;
+  font-size: 14px;
+}
